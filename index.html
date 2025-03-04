@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Mirror</title>
+    <title>Unity WebGL Player | AI_SNAKE_GAME</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1080 height=1920></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Mirror</div>
+        <div id="unity-build-title">AI_SNAKE_GAME</div>
       </div>
     </div>
     <script>
@@ -56,14 +56,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/0.loader.js";
+      var loaderUrl = buildUrl + "/Webgl_Mobile_click_drag_test.loader.js";
       var config = {
-        dataUrl: buildUrl + "/0.data",
-        frameworkUrl: buildUrl + "/0.framework.js",
-        codeUrl: buildUrl + "/0.wasm",
+        dataUrl: buildUrl + "/Webgl_Mobile_click_drag_test.data",
+        frameworkUrl: buildUrl + "/Webgl_Mobile_click_drag_test.framework.js",
+        codeUrl: buildUrl + "/Webgl_Mobile_click_drag_test.wasm",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Mirror",
-        productName: "Mirror",
+        companyName: "DefaultCompany",
+        productName: "AI_SNAKE_GAME",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -102,8 +102,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1080px";
+        canvas.style.height = "1920px";
       }
 
       loadingBar.style.display = "block";
